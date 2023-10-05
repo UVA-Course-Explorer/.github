@@ -69,7 +69,7 @@ We currently do not require user authentication/login to use our site. We do not
 
 
 ## Styling (especially on mobile devices)
-The organization of our catalog needs to be improved on mobile devices of different screen sizes. We are planning to shift over to a CSS framework soon to make it easier to have our catalog responsive on different devices.
+The organization of our catalog needs to be improved on mobile devices of different screen sizes. We are planning to shift over to a CSS framework soon to make it easier to have our catalog be responsive on different screen sizes.
 
 If you have ideas to address any of the above limitations, please let us know through our [feedback form](https://forms.gle/Jq2di8Zji4tDNKZF8) or by emailing us at uvacourseexplorer@gmail.com
 
