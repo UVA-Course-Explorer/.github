@@ -13,7 +13,9 @@ We then compute the cosine similarity between the query vector and the vectors o
 $cos(\theta) = \frac{(A \cdot B)}{||A| ||B||}$
 
 
-Cosine similarities will be in the range (-1, 1). A high cosine similarities implies that two vectors are similar. The similarity score reported on our site is just the cosine similarity multiplied by 100.
+Cosine similarities will be in the range (-1, 1). A high cosine similarity implies that two vectors are similar, and that the texts corresponding to the two vectors have similar meaning.
+
+ The similarity score reported on our site is just the cosine similarity multiplied by 100.
 
 To generate results for a query, we return the courses whose vectors had the 10 highest cosine similarities with the query vector.
 
@@ -65,6 +67,9 @@ We've found that classes with short descriptions pop up in search results quite 
 ## Lack of user authentication
 We currently do not require user authentication/login to use our site. We do not want to require users to log in to use our application. We do have CORS set up to prevent other sites from hitting our API, but it is still quite easy to spam our server with requests (from either the website, or by directly accessing our publicly-exposed API).
 
+
+## Styling (especially on mobile devices)
+The organization of our catalog needs to be improved on mobile devices of different screen sizes. We are planning to shift over to a CSS framework soon to make it easier to have our catalog responsive on different devices.
 
 If you have ideas to address any of the above limitations, please let us know through our [feedback form](https://forms.gle/Jq2di8Zji4tDNKZF8) or by emailing us at uvacourseexplorer@gmail.com
 
