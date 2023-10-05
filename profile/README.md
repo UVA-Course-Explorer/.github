@@ -18,7 +18,7 @@ Cosine similarities will be in the range (-1, 1). A high cosine similarities imp
 To generate results for a query, we return the courses whose vectors had the 10 highest cosine similarities with the query vector.
 
 
-The `text-embedding-ada-002` model is the encoder portion of a transformer that was trained to output similar vectors for pieces of text that appear close to each other on the internet (an approach referred to as contrastive learning). For more detals about the model, please refer to the following [paper](https://cdn.openai.com/papers/Text_and_Code_Embeddings_by_Contrastive_Pre_Training.pdf).
+The `text-embedding-ada-002` model is the encoder portion of a transformer that was trained to output similar vectors for pieces of text that appear close to each other on the internet (an approach referred to as contrastive learning). For more details about the model, please refer to the following [paper](https://cdn.openai.com/papers/Text_and_Code_Embeddings_by_Contrastive_Pre_Training.pdf).
 
 
 
@@ -90,8 +90,8 @@ We built an initial prototype of this project for HooHacks 2023. You can view ou
 We drew inspiration from several projects when building UVA Course Explorer.
 
 
-- [awesome-movies.life](https://t.co/l6uyNmrXmu): Andrej Karpathy's movie recommendation site and accompanying [tweet](https://twitter.com/karpathy/status/1647374645316968449?lang=en) convinced us to use NumPy for storing our embedding matrix and performing computation required for each search.
-- [Huberman AI (now Dexa AI)](https://dexa.ai/huberman?utm_source=rileyt&utm_medium=redirect&utm_campaign=migration): This site let users search for relevant segments of transcripts of the Huberman Lab podcast. You can find a video of the first version of their app [here](https://twitter.com/rileytomasek/status/1603854647575384067).
+- [awesome-movies.life](https://t.co/l6uyNmrXmu): Andrej Karpathy's movie recommendation site and accompanying [tweet](https://twitter.com/karpathy/status/1647374645316968449?lang=en) convinced us to use NumPy for storing our embedding matrix and performing the computations required for each search.
+- [Huberman AI (now Dexa AI)](https://dexa.ai/huberman?utm_source=rileyt&utm_medium=redirect&utm_campaign=migration): This site lets users search for relevant segments of transcripts of the Huberman Lab podcast using text embeddings. You can find a video of the first version of their app [here](https://twitter.com/rileytomasek/status/1603854647575384067).
 - [searchclasses.org](https://www.searchclasses.org/): This semantic search engine built for Stanford courses showed us evidence that semantic search for university courses could yield relevant results.
 - [Lou's List](https://louslist.org/): We based our catalog heavily on Lou's List, the OG catalog for UVA courses maintained by Professor Lou Bloomfield since 2009.
 
@@ -104,6 +104,8 @@ We also found the [site](https://f22.cs3240.org/) for UVA's CS 3240 (Advanced So
 
 
 # Acknowledgements
+We would like to thank DALLE-2 for creating our logo.
+
 We would like to thank ChatGPT and GitHub Copilot for their contributions to this project. Both of you have been amazing at helping us navigate the new tools and frameworks we used. We are very excited (and a little scared) to see what you both become. 
 
 We would also like to thank our families and friends for giving us tons of constructive feedback during the development process and also for being amazing beta testers. Thank you :)) 
