@@ -10,7 +10,7 @@ When a user inputs a query, we use the same model to generate a vector represent
 
 We then compute the cosine similarity between the query vector and the vectors of all the courses. The cosine similarity is a measure of the similarity between two vectors and is closely related to the dot product operation. Below is the formula for the cosine similarity, where A and B are vectors:
 
-$cos(\theta) = \frac{(A \cdot B)}{||A| ||B||}$
+$\Large{cos(\theta) = \frac{A \cdot B}{||A| ||B||}}$
 
 
 Cosine similarities will be in the range (-1, 1). A high cosine similarity implies that two vectors are similar, and that the texts corresponding to the two vectors have similar meaning.
@@ -20,7 +20,7 @@ Cosine similarities will be in the range (-1, 1). A high cosine similarity impli
 To generate results for a query, we return the courses whose vectors had the 10 highest cosine similarities with the query vector.
 
 
-The `text-embedding-ada-002` model is the encoder portion of a transformer that was trained to output similar vectors for pieces of text that appear close to each other on the internet (an approach referred to as contrastive learning). For more details about the model, please refer to the following [paper](https://cdn.openai.com/papers/Text_and_Code_Embeddings_by_Contrastive_Pre_Training.pdf).
+The `text-embedding-ada-002` model is the encoder portion of a transformer that was trained to output similar vectors for pieces of text that appear close to each other on the internet (an approach referred to as contrastive learning). For more details about the model, please refer to the following [paper](https://cdn.openai.com/papers/Text_and_Code_Embeddings_by_Contrastive_Pre_Training.pdf) and related blog posts [1](https://openai.com/blog/introducing-text-and-code-embeddings) [2](https://openai.com/blog/new-and-improved-embedding-model).
 
 
 
@@ -74,20 +74,16 @@ The organization of our catalog needs to be improved on mobile devices of differ
 If you have ideas to address any of the above limitations, please let us know through our [feedback form](https://forms.gle/Jq2di8Zji4tDNKZF8) or by emailing us at uvacourseexplorer@gmail.com
 
 
-# Planned Features
-We plan to update Search and Catalog with course information for the next semester as soon as they are made available on SIS.
+# Planned Future Features
+We are planning to add catalog pages that display the various engagement and discipline requirements for the College of Arts & Sciences.
 
-We also plan to add catalog pages for previous semesters.
-
-We may also add catalog pages that display the various engagement and discipline requirements (across departments) for the College of Arts & Sciences.
+We are also planning to add more filtering options on the Search page.
 
 And as discussed in the limitations section, we may experiment with appending LLM-generated descriptions to short descriptions to improve search results.
 
 
-
-
 # HooHacks 2023
-We built an initial prototype of this project for HooHacks 2023. You can view our DevPost [here](https://devpost.com/software/uva-course-explorer) and our hackathon repository [here](https://github.com/sidlakkoju/UVA-Course-Explorer).
+We built an initial prototype of this project for HooHacks 2023. You can view our Devpost [here](https://devpost.com/software/uva-course-explorer) and our hackathon repository [here](https://github.com/sidlakkoju/UVA-Course-Explorer).
 
 
 
@@ -96,7 +92,6 @@ We drew inspiration from several projects when building UVA Course Explorer.
 
 
 - [awesome-movies.life](https://t.co/l6uyNmrXmu): Andrej Karpathy's movie recommendation site and accompanying [tweet](https://twitter.com/karpathy/status/1647374645316968449?lang=en) convinced us to use NumPy for storing our embedding matrix and performing the computations required for each search.
-- [Huberman AI (now Dexa AI)](https://dexa.ai/huberman?utm_source=rileyt&utm_medium=redirect&utm_campaign=migration): This site lets users search for relevant segments of transcripts of the Huberman Lab podcast using text embeddings. You can find a video of the first version of their app [here](https://twitter.com/rileytomasek/status/1603854647575384067).
 - [searchclasses.org](https://www.searchclasses.org/): This semantic search engine built for Stanford courses showed us evidence that semantic search for university courses could yield relevant results.
 - [Lou's List](https://louslist.org/): We based our catalog heavily on Lou's List, the OG catalog for UVA courses maintained by Professor Lou Bloomfield since 2009.
 
