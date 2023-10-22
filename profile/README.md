@@ -81,7 +81,11 @@ We are also planning to add more filtering options on the Search page.
 
 We also plan to add outlines on the catalog pages to make them easy to navigate (so you don't need to scroll a lot to get to the bottom).
 
+Add functionality to go back on search pages
+
 And as discussed in the limitations section, we may experiment with appending LLM-generated descriptions to short descriptions to improve search results.
+
+
 
 
 # HooHacks 2023
