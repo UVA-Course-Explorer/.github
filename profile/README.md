@@ -20,7 +20,7 @@ Cosine similarities will be in the range [-1, 1]. A high cosine similarity impli
 To generate results for a query, we return the courses whose vectors had the 10 highest cosine similarities with the query vector.
 
 
-The `text-embedding-ada-002` model is the encoder portion of a transformer that was trained to output similar vectors for pieces of text that appear close to each other on the internet (an approach referred to as contrastive learning). For more details about the model, please refer to the following [paper](https://cdn.openai.com/papers/Text_and_Code_Embeddings_by_Contrastive_Pre_Training.pdf) and related blog posts [1](https://openai.com/blog/introducing-text-and-code-embeddings) [2](https://openai.com/blog/new-and-improved-embedding-model).
+The `text-embedding-ada-002` model is the encoder portion of a transformer that was trained to output similar vectors for pieces of text that appear close to each other on the internet (an approach referred to as contrastive learning). For more details about the model, please refer to the related blog posts [1](https://openai.com/blog/introducing-text-and-code-embeddings) [2](https://openai.com/blog/new-and-improved-embedding-model) and [paper](https://cdn.openai.com/papers/Text_and_Code_Embeddings_by_Contrastive_Pre_Training.pdf).
 
 
 
