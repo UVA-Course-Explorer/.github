@@ -13,7 +13,7 @@ We then compute the cosine similarity between the query vector and the vectors o
 $\Large{cos(\theta) = \frac{A \cdot B}{||A| ||B||}}$
 
 
-Cosine similarities will be in the range (-1, 1). A high cosine similarity implies that two vectors are similar, and that the texts corresponding to the two vectors have similar meaning.
+Cosine similarities will be in the range [-1, 1]. A high cosine similarity implies that two vectors are similar, and that the texts corresponding to the two vectors have similar meaning.
 
  The similarity score reported on our site is just the cosine similarity multiplied by 100.
 
@@ -62,29 +62,20 @@ Both of us are still learning the intricacies of React. As a result, we are cert
 
 
 ## Low Quality Search Results Due to Classes with Short Descriptions
-We've found that classes with short descriptions pop up in search results quite often, even if they are not closely related to the search query. We may try to address this by generating descriptions using a Large Language Model for courses with short descriptions.
+We've found that classes with short descriptions pop up in search results quite often, even if they are not closely related to the search query.
+
 
 ## Lack of user authentication
 We currently do not require user authentication/login to use our site. We do not want to require users to log in to use our application. We do have CORS set up to prevent other sites from hitting our API, but it is still quite easy to spam our server with requests (from either the website, or by directly accessing our publicly-exposed API).
 
 
-## Styling (especially on mobile devices)
-The organization of our catalog needs to be improved on mobile devices of different screen sizes. We are planning to shift over to a CSS framework soon to make it easier to have our catalog be responsive on different screen sizes.
 
 If you have ideas to address any of the above limitations, please let us know through our [feedback form](https://forms.gle/Jq2di8Zji4tDNKZF8) or by emailing us at uvacourseexplorer@gmail.com
 
 
 # Planned Future Features
-We are planning to add catalog pages that display the various engagement and discipline requirements for the College of Arts & Sciences.
-
-We are also planning to add more filtering options on the Search page.
-
-We also plan to add outlines on the catalog pages to make them easy to navigate (so you don't need to scroll a lot to get to the bottom).
-
-Add functionality to go back on search pages
-
-And as discussed in the limitations section, we may experiment with appending LLM-generated descriptions to short descriptions to improve search results.
-
+- [ ] Attendance/Waitlist Graphs
+- [ ] Dropdown on Catalog to Select Semester/Term (instead of a separate page)
 
 
 
@@ -114,7 +105,7 @@ We would like to thank DALLE-2 for creating our logo.
 
 We would like to thank ChatGPT and GitHub Copilot for their contributions to this project. Both of you have been amazing at helping us navigate the new tools and frameworks we used. We are very excited (and a little scared) to see what you both become. 
 
-We would also like to thank our families and friends for giving us tons of constructive feedback during the development process and also for being amazing beta testers. Thank you :)) 
+We would also like to thank our families and friends for giving us tons of constructive feedback during the development process and also for being the best beta testers we could ask for. Thank you :)) 
 
 And thank you for reading all the way through! Please let us know if you have any feedback or suggestions through this [form](https://forms.gle/Jq2di8Zji4tDNKZF8), or email us at uvacourseexplorer@gmail.com. We would love to hear from you! 
 
