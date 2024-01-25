@@ -74,8 +74,10 @@ If you have ideas to address any of the above limitations, please let us know th
 
 
 # Planned Future Features
+- [ ] Automate search index population. Ccurrently, we need to manually run a script to populate our search index. As a result, information on the search page may be stale if classes have been added/removed from SIS. We are planning to automate this with a GitHub action.
+- [ ] Have waitlist numbers in the catalog
 - [ ] Attendance/Waitlist Graphs
-- [ ] Dropdown on Catalog to Select Semester/Term (instead of a separate page)
+- [ ] Dropdown on all catalog pages to Select Semester/Term (instead of a separate page)
 
 
 
