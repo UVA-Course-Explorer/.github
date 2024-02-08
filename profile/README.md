@@ -1,5 +1,5 @@
 ## UVA Course Explorer
-This README is an overview of UVA Course Explorer, an AI-powered search engine and course catalog for UVA Courses.
+This README is an overview of UVA Course Explorer, a search engine and catalog for courses at the University of Virginia.
 
 # Search
 Our Search page is powerd by OpenAI's `text-embedding-ada-002` model. Given a piece of text, this model outputs a 1536-dimensional vector that encodes the semantic meaning of the text.
