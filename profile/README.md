@@ -10,7 +10,7 @@ When a user inputs a query, we use the same model to generate a vector represent
 
 We then compute the cosine similarity between the query vector and the vectors of all the courses. The cosine similarity is a measure of the similarity between two vectors and is closely related to the dot product operation. Below is the formula for the cosine similarity, where A and B are vectors:
 
-$\Large{cos(\theta) = \frac{A \cdot B}{||A| ||B||}}$
+$\Large{cos(\theta) = \frac{A \cdot B}{|A| |B|}}$
 
 
 Cosine similarities will be in the range [-1, 1]. A high cosine similarity implies that two vectors are similar, and that the texts corresponding to the two vectors have similar meaning.
