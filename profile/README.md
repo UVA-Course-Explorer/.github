@@ -51,7 +51,7 @@ You can find a spreadsheet outlining all the costs to host the app [here](https:
 
 # Limitations
 ## Bias
-The OpenAI embedding model we use to generate vector representations of search queries and course descriptions was trained using large quantities of internet text. As a result, the model can encode biases found in internet text in the embeddings it generates.
+The OpenAI embedding model we use was trained using large quantities of internet text. As a result, the model can encode biases found in internet text in the embeddings it generates.
 
 To mitigate this issue, we pass all searches through OpenAI's Moderation API, which flags explicitly innapropriate search queries. However, there is still a chance that a non-explicit query yields biased course results.
 
