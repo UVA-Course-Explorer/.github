@@ -2,7 +2,7 @@
 This README is an overview of UVA Course Explorer, a search engine and catalog for courses at the University of Virginia.
 
 # Search
-Our Search page is powerd by OpenAI's `text-embedding-3-small` model. Given a piece of text, this model outputs a 1536-dimensional vector that encodes the semantic meaning of the text.
+Our Search page is powerd by OpenAI's `text-embedding-3-small` model. Given a piece of text, this model outputs a 1536-dimensional vector that encodes the meaning of the text.
 
 We have run the descriptions of all the courses at UVA thorugh this model and store the outputted vector for each course.
 
