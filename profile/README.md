@@ -2,7 +2,7 @@
 This README is an overview of UVA Course Explorer, a search engine and catalog for courses at the University of Virginia.
 
 # Search
-Our Search page is powerd by OpenAI's `text-embedding-ada-002` model. Given a piece of text, this model outputs a 1536-dimensional vector that encodes the semantic meaning of the text.
+Our Search page is powerd by OpenAI's `text-embedding-3-small` model. Given a piece of text, this model outputs a 1536-dimensional vector that encodes the semantic meaning of the text.
 
 We have run the descriptions of all the courses at UVA thorugh this model and store the outputted vector for each course.
 
@@ -20,7 +20,7 @@ Cosine similarities will be in the range [-1, 1]. A high cosine similarity impli
 To generate results for a query, we return the courses whose vectors had the 10 highest cosine similarities with the query vector.
 
 
-The `text-embedding-ada-002` model is the encoder portion of a transformer that was trained to output similar vectors for pieces of text that appear close to each other on the internet (an approach referred to as contrastive learning). For more details about the model, please refer to the related blog posts [1](https://openai.com/blog/introducing-text-and-code-embeddings) [2](https://openai.com/blog/new-and-improved-embedding-model) and [paper](https://cdn.openai.com/papers/Text_and_Code_Embeddings_by_Contrastive_Pre_Training.pdf).
+The `text-embedding-3-small` model is the encoder portion of a transformer that was trained to output similar vectors for pieces of text that appear close to each other on the internet (an approach generally referred to as contrastive learning). For more details about the model, please refer to the related blog posts [1](https://openai.com/blog/introducing-text-and-code-embeddings) [2](https://openai.com/blog/new-and-improved-embedding-model) [3](https://openai.com/index/new-embedding-models-and-api-updates/) and [paper](https://cdn.openai.com/papers/Text_and_Code_Embeddings_by_Contrastive_Pre_Training.pdf).
 
 
 
@@ -69,21 +69,18 @@ We've found that classes with short descriptions pop up in search results quite 
 We currently do not require user authentication/login to use our site. We do not want to require users to log in to use our application. We do have CORS set up to prevent other sites from hitting our API, but it is still quite easy to spam our server with requests (from either the website, or by directly accessing our publicly-exposed API).
 
 
-
 If you have ideas to address any of the above limitations, please let us know through our [feedback form](https://forms.gle/Jq2di8Zji4tDNKZF8) or by emailing us at uvacourseexplorer@gmail.com
 
 
 # Planned Future Features
-- [ ] Automate search index population. Ccurrently, we need to manually run a script to populate our search index. As a result, information on the search page may be stale if classes have been added/removed from SIS. We are planning to automate this with a GitHub action.
+- [ ] Automate search index population. Currently, we need to manually run a script to populate our search index once a semester. As a result, information on the search page may be stale if classes have been added/removed from SIS. We are planning to automate this with a GitHub action.
 - [ ] Have waitlist numbers in the catalog
 - [ ] Attendance/Waitlist Graphs
 - [ ] Dropdown on all catalog pages to Select Semester/Term (instead of a separate page)
 
 
-
 # HooHacks 2023
 We built an initial prototype of this project for HooHacks 2023. You can view our Devpost [here](https://devpost.com/software/uva-course-explorer) and our hackathon repository [here](https://github.com/sidlakkoju/UVA-Course-Explorer).
-
 
 
 # Related Works
@@ -95,10 +92,7 @@ We drew inspiration from several projects when building UVA Course Explorer.
 - [Lou's List](https://louslist.org/): We based our catalog heavily on Lou's List, the OG catalog for UVA courses maintained by Professor Lou Bloomfield since 2009.
 
 
-
 We also found the [site](https://f22.cs3240.org/) for UVA's CS 3240 (Advanced Software Development) class to be helpful when learning about the SIS API during HooHacks 2023. (It looks like info about the SIS API has been removed since we last checked).
-
-
 
 
 
